@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #707370;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.flashcardapp.SingleFlashcardController">
+   <children>
+      <Label layoutX="30.0" layoutY="25.0" text="Question:" textFill="WHITE" />
+      <TextField fx:id="questionTextField" layoutX="30.0" layoutY="53.0" onMouseClicked="#handleQuestionTextFieldClick" prefHeight="48.0" prefWidth="546.0" style="-fx-background-color: #595E60; -fx-font-family: Consolas; -fx-highlight-fill: white; -fx-text-fill: white;" />
+      <Label layoutX="33.0" layoutY="123.0" prefHeight="17.0" prefWidth="45.0" text="Answer:" textFill="WHITE" />
+      <TextArea fx:id="answerTextArea" layoutX="30.0" layoutY="155.0" prefHeight="200.0" prefWidth="546.0" style="-fx-control-inner-background:#595E60; -fx-font-family: Consolas; -fx-highlight-fill: white; -fx-highlight-text-fill: #000000; -fx-text-fill: white; -fx-focus-color: -fx-control-inner-background ; -fx-faint-focus-color: -fx-control-inner-background ;-fx-background-color: transparent; " />
+      <Button fx:id="saveButton" layoutX="489.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleSaveButton" style="-fx-background-color: #BDC3CB;" text="Save">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="editButton" layoutX="539.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleEditButtonClick" style="-fx-background-color: #BDC3CB;" text="Edit">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
